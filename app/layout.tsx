@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Bankify",
-  description: "Make Bank simple & modern",
+  description: "Make Banking simple & modern",
 };
 
 export default function RootLayout({
@@ -13,8 +13,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-      >
+      <body className="text-lg">
         {children}
       </body>
     </html>
