@@ -7,8 +7,8 @@ export default function Layout({children}:{children: React.ReactNode}) {
         <SideBar/>
         <div className="flex-grow">
           <NavBar name={"Overview"}/>
-          <div className="px-10">{children}</div>
-        </div>
+          <div className="bg-gray-100 px-10 h-screen">{children}</div>   
+        </div> 
     </div>
   )
 }
