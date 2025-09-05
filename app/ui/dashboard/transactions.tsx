@@ -1,8 +1,8 @@
 export function Transactions() {
   return (
-    <div className="flex flex-col gap-5">
+    <div className="flex flex-col gap-5 dark:text-white">
         <div className="text-xl font-medium">Recent Transactions</div>
-        <div className="flex flex-col gap-5 bg-white rounded-2xl p-5">
+        <div className="flex flex-col gap-5 bg-white rounded-2xl p-5 dark:bg-black ">
             <div className="flex gap-5">
                 <div className="flex gap-3">
                     <div className="w-10 h-10 bg-amber-200  flex justify-center items-center rounded-full"><img src="/Transaction1.svg" alt="" /></div>
