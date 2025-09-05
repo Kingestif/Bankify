@@ -62,7 +62,7 @@ export function SideBar() {
   return (
     <div className="flex flex-col gap-10 px-10  pt-7 dark:bg-black">
       <div className="flex items-center gap-2 ">
-        <img className="w-10 h-10" src="/Logo.png" alt="" />
+        <img className="w-10 h-10" src="/logo.svg" alt="" />
         <div className="text-2xl font-bold dark:text-white">Bankify.</div>
       </div>
 
