@@ -20,7 +20,7 @@ export function BlueCard(){
             </div>
             <div className="row3 flex gap-2 justify-between">
                 <div className="font-bold text-lg">5426 **** **** 3252</div>
-                <img src="/union.svg" className="w-10 h-10" alt="union icon" />
+                <img src="/union.svg" className="w-10 h-10" alt="union icon"/>
             </div>
         </div>
     )
