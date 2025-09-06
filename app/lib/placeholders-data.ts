@@ -45,17 +45,17 @@ export const TransactionData:TransactionType[] = [
         type:"Transfer",
         card:"1234 ****",
         date:"25 Jan, 10.40 PM",
-        amount:"-$1050",
+        amount:"+$840",
         receipt:"download"
     },
-
+    
     {
         description:"Emilly",
         transactionId:"#12548796",
         type:"Transfer",
         card:"1234 ****",
         date:"25 Jan, 10.40 PM",
-        amount:"+$840",
+        amount:"-$1050",
         receipt:"download"
     },
 ]

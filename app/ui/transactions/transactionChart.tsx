@@ -11,12 +11,12 @@ export function TransactionChart() {
         <div className='w-130 h-70 bg-white dark:bg-black p-10 rounded-2xl'>
             <Bar
                 data={{
-                    labels: ["Sun", "Mon", "Tue", "Wed"],
+                    labels: ["Jun", "Jul", "Aug", "Sep", "Jan", "Feb"],
                     datasets: [
                         {
                             label: "Expense",
-                            data: [200,400,300,290],
-                            backgroundColor: ["#cfcbca","#cfcbca","#7ae7c7","#cfcbca"],
+                            data: [200,400,300,290, 350, 200],
+                            backgroundColor: ["#cfcbca","#cfcbca","#7ae7c7","#cfcbca", "#cfcbca", "#cfcbca"],
                             borderRadius:100,
                             barThickness:50
                         },
