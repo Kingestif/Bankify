@@ -6,7 +6,11 @@ export function LightCard(){
                     <div className="text-gray-500">Balance</div>
                     <div className="font-medium text-lg">$5,3453</div>
                 </div>
-                <img src="/Chip_Card_dark.svg" className="w-10 h-10" alt="" />
+                <picture>
+                    <source media="(prefers-color-scheme: light)" srcSet="/Chip_Card_dark.svg"/>
+                    <source media="(prefers-color-scheme: dark)" srcSet="/Chip_Card.svg"/>
+                    <img src="/Chip_Card_dark.svg" className="w-10 h-10" alt="" />
+                </picture>
             </div>
             <div className="row2 flex gap-2 justify-between">
                 <div>
