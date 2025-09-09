@@ -28,7 +28,7 @@ export default function QuickTransfer() {
     return (
         <div className="flex flex-col gap-4 w-fit dark:text-white">
             <div className="font-medium text-xl">Quick Transfer</div>
-            <div className="bg-white p-7 rounded-2xl  flex flex-col gap-5 dark:bg-black">
+            <div className="bg-white p-7 rounded-2xl  flex flex-col gap-5 dark:bg-gray-800">
                 <div className="flex gap-5">
                     {TransferData.map(people=>(
                         <div key={people.name} className="flex flex-col items-center gap-">
