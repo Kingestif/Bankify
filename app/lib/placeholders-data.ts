@@ -171,3 +171,29 @@ export const InvoicesData:InvoicesType[] = [
         amount:"$200"
     }
 ]
+
+type InvestmentType = {
+    imageUrl:string;
+    name:string;
+    balance:string
+}
+
+export const InvestmentData:InvestmentType[] = [
+    {
+        imageUrl:"/invest1.png",
+        name:"Total Invested amount",
+        balance: "$143,200"
+    },
+
+    {
+        imageUrl:"/invest2.png",
+        name:"Number of investments",
+        balance: "$10,200"
+    },
+
+    {
+        imageUrl:"/invest3.png",
+        name:"Rate of return",
+        balance: "+5.8%"
+    }
+]
