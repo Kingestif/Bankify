@@ -197,3 +197,77 @@ export const InvestmentData:InvestmentType[] = [
         balance: "+5.8%"
     }
 ]
+
+type myInvestment = {
+    icon:string;
+    name:string;
+    type:string;
+    value:string;
+    percentage:string;
+}
+
+export const MyIvestmentData:myInvestment[]=[
+    {
+        icon:"/myenv1.png",
+        name:"Apple Store",
+        type:"E-commerce Marketplace",
+        value:"$43,432",
+        percentage:"+12%",
+    },
+
+    {
+        icon:"/myenv2.png",
+        name:"Samsung Mobile",
+        type:"E-commerce Marketplace",
+        value:"$23,432",
+        percentage:"-4%",
+    },
+
+    {
+        icon:"/myenv3.png",
+        name:"Tesla Motors",
+        type:"Electric Vehicles",
+        value:"$5,432",
+        percentage:"+24%",
+    }
+]
+
+type trending = {
+    number:string;
+    name:string;
+    price:string;
+    return:string;
+}
+
+export const TrendingData:trending[]=[
+    {
+        number:"01",
+        name:"Trivago",
+        price:"$234",
+        return:"+5%"
+    },
+    {
+        number:"02",
+        name:"Canon",
+        price:"$352",
+        return:"-8%"
+    },
+    {
+        number:"01",
+        name:"Uber Food",
+        price:"$325",
+        return:"+25%"
+    },
+    {
+        number:"01",
+        name:"Nokia",
+        price:"$553",
+        return:"-9%"
+    },
+    {
+        number:"01",
+        name:"Tiktok",
+        price:"$152",
+        return:"+10%"
+    },   
+]

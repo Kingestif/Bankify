@@ -1,7 +1,7 @@
 "use client"
-import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend } from 'chart.js';
-import { Bar, Line } from "react-chartjs-2"
-ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
+import { Chart as ChartJS, LineElement, PointElement, LineController, CategoryScale, LinearScale, Title, Tooltip, Legend } from 'chart.js';
+import { Line } from "react-chartjs-2"
+ChartJS.register(LineElement, PointElement, LineController, CategoryScale, LinearScale, Title, Tooltip, Legend);
 
 export function LineChart() {
   return (
@@ -11,14 +11,12 @@ export function LineChart() {
                 labels: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
                 datasets: [
                     {
-                        label: "Diposit",
+                        label: "Investments",
                         data: [200,400,300,290,500,600,330],
-                        backgroundColor: "#1814F3",
-                    },
-                    {
-                        label: "Withdrawal",
-                        data: [300,600,500,250,300,400,200],
-                        backgroundColor: '#7ae7c7'
+                        backgroundColor: "#E98A15",
+                        borderColor: "#1814F3",
+                        tension: 0,
+                        pointRadius:8
                     },
                 ]
             }}  
