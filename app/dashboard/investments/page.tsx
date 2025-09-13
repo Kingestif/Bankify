@@ -1,6 +1,6 @@
 import { InvestmentData } from "@/app/lib/placeholders-data";
 import { Chart } from "@/app/ui/dashboard/chart";
-import { LineChart } from "@/app/ui/investments/lineChart";
+import { CurvedLineChart, LineChart } from "@/app/ui/investments/lineChart";
 import MyInvestment from "@/app/ui/investments/myIvestment";
 import TrendingStock from "@/app/ui/investments/trendingStock";
 
@@ -21,7 +21,7 @@ export default function page() {
 
       <div className="flex justify-between">
         <LineChart/>
-        <Chart/>
+        <CurvedLineChart/>
       </div>
 
       <div className="flex gap-50">

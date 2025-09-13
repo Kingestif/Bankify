@@ -2,9 +2,9 @@ import { TrendingData } from "@/app/lib/placeholders-data"
 
 export default function TrendingStock() {
   return (
-    <div className="flex flex-col grow gap-2">
+    <div className="flex flex-col grow gap-2 dark:text-white">
         <div className="font-semibold text-xl">Trending Stock</div>
-        <table className="w-full bg-white rounded-2xl">
+        <table className="w-full bg-white rounded-2xl dark:bg-gray-700">
             <tr className="TrendingStock text-lg  text-gray-500 ">
                 <th>SL No</th>
                 <th>Name</th>

@@ -2,12 +2,12 @@ import { MyIvestmentData } from "@/app/lib/placeholders-data";
 
 export default function MyInvestment() {
   return (
-    <div className="w-1/2 flex flex-col gap-2">
+    <div className="w-1/2 flex flex-col gap-2 dark:text-white">
         <div className="font-bold text-xl">My Investment</div>
         <div className="flex flex-col gap-3">
             {
                 MyIvestmentData.map((item,idx)=>(
-                    <div key={item.name} className="flex bg-white p-4 rounded-2xl items-center justify-between">
+                    <div key={item.name} className="flex bg-white p-4 rounded-2xl items-center justify-between dark:bg-gray-800">
                         <div className="flex gap-5">
                             <div className="w-13 h-13 rounded-xl">
                                 <img src={item.icon} alt="" />
