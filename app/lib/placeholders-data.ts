@@ -271,3 +271,60 @@ export const TrendingData:trending[]=[
         return:"+10%"
     },   
 ]
+
+type cardListType = {
+    icon:string;
+}
+
+export const CardListData:cardListType[]=[
+    {
+        icon:"/card1.png"
+    },
+
+    {
+        icon:"/card2.png"
+    },
+
+    {
+        icon:"/card3.png"
+    }
+]
+
+type cardSetting = {
+    icon:string;
+    name:string;
+    option:string;
+}
+
+export const CardSettingData:cardSetting[] = [
+    {
+        icon:"/set1.png",
+        name:"Block Card",
+        option:"Instantly block your card"
+    },
+
+    {
+        icon:"/set2.png",
+        name:"Change Pin Code",
+        option:"Choose another pin code"
+    },
+
+    {
+        icon:"/set3.png",
+        name:"Add to Google Pay",
+        option:"Withdraw without any card"
+    },
+
+    {
+        icon:"/set4.png",
+        name:"Add to Apple Pay",
+        option:"Withdraw without any card"
+    },
+
+    {
+        icon:"/set4.png",
+        name:"Add to Apple Store",
+        option:"Withdraw without any card"
+    },
+]
+

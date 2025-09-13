@@ -24,3 +24,9 @@
 .TrendingStock th{
     font-weight: normal;
 }
+
+.Form label{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
