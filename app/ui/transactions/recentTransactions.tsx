@@ -11,26 +11,30 @@ export default function RecentTransactions() {
             </div>
 
             <table className="TransactionTable w-full">
-                <tr>
-                    <th className="Table-heading">Description</th>
-                    <th className="Table-heading">Transaction ID</th>
-                    <th className="Table-heading">Type</th>
-                    <th className="Table-heading">Card</th>
-                    <th className="Table-heading">Date</th>
-                    <th className="Table-heading">Amount</th>
-                    <th className="Table-heading">Receipt</th>
-                </tr>
-                {TransactionData.map((item,idx)=>(
-                    <tr key={idx}>
-                        <td className="Table-Datas">{item.description}</td>
-                        <td className="Table-Datas">{item.transactionId}</td>
-                        <td className="Table-Datas">{item.type}</td>
-                        <td className="Table-Datas">{item.card}</td>
-                        <td className="Table-Datas">{item.date}</td>
-                        <td className={`Table-Datas ${idx%2 !== 0? "text-green-600": "text-red-600"}`}>{item.amount}</td>
-                        <td className="Table-Datas"><div className="border-1 border-gray-600 w-fit rounded-full px-2 py-1">Download</div></td>
+                <thead>
+                    <tr>
+                        <th className="Table-heading">Description</th>
+                        <th className="Table-heading">Transaction ID</th>
+                        <th className="Table-heading">Type</th>
+                        <th className="Table-heading">Card</th>
+                        <th className="Table-heading">Date</th>
+                        <th className="Table-heading">Amount</th>
+                        <th className="Table-heading">Receipt</th>
                     </tr>
-                ))}
+                </thead>
+                <tbody>
+                    {TransactionData.map((item,idx)=>(
+                            <tr key={item.description}>
+                                <td className="Table-Datas">{item.description}</td>
+                                <td className="Table-Datas">{item.transactionId}</td>
+                                <td className="Table-Datas">{item.type}</td>
+                                <td className="Table-Datas">{item.card}</td>
+                                <td className="Table-Datas">{item.date}</td>
+                                <td className={`Table-Datas ${idx%2 !== 0? "text-green-600": "text-red-600"}`}>{item.amount}</td>
+                                <td className="Table-Datas"><div className="border-1 border-gray-600 w-fit rounded-full px-2 py-1">Download</div></td>
+                            </tr>
+                    ))}
+                </tbody>
             </table>
 
             <div className="flex font-medium gap-5 items-center justify-end">
