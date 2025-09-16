@@ -1,5 +1,11 @@
+import ActiveLoans from "@/app/ui/loans/activeLoans";
+import Header from "@/app/ui/loans/header";
+
 export default function page() {
   return (
-    <div>This is loans page</div>
+    <div className="flex flex-col gap-5">
+      <Header/>
+      <ActiveLoans/>
+    </div>
   )
 }

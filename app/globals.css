@@ -30,3 +30,12 @@
     flex-direction: column;
     gap: 0.3rem;
 }
+
+.ActiveLoans th {
+    font-weight:normal;
+    padding:2rem;
+}
+
+.LoanBody td {
+    padding:1.5rem;
+}

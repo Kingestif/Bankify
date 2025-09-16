@@ -328,3 +328,119 @@ export const CardSettingData:cardSetting[] = [
     },
 ]
 
+type LoansType = {
+    imageUrl:string;
+    name:string;
+    balance:string
+}
+
+export const LoansData:LoansType[] = [
+    {
+        imageUrl:"/loans.png",
+        name:"Personal Loans",
+        balance: "$50,200"
+    },
+
+    {
+        imageUrl:"/loans1.png",
+        name:"Corporate Loans",
+        balance: "$100,200"
+    },
+
+    {
+        imageUrl:"/loans2.png",
+        name:"Buisness Loans",
+        balance: "$500,000"
+    },
+
+    {
+        imageUrl:"/loans3.png",
+        name:"Custom Loans",
+        balance: "Choose Money"
+    }
+]
+
+interface Loan {
+  id: number | string;           
+  loanMoney: string;   
+  leftToRepay: string;  
+  durationMonths: number;
+  interestRate: number; 
+  installmentPerMonth: string;
+}
+
+export const loans: Loan[] = [
+  {
+    id: 1,
+    loanMoney: "$100000",
+    leftToRepay: "$40500",
+    durationMonths: 8,
+    interestRate: 12,
+    installmentPerMonth: "$2000"
+  },
+  {
+    id: 2,
+    loanMoney: "$500000",
+    leftToRepay: "$250000",
+    durationMonths: 36,
+    interestRate: 10,
+    installmentPerMonth: "$8000"
+  },
+  {
+    id: 3,
+    loanMoney: "$900000",
+    leftToRepay: "$40500",
+    durationMonths: 12,
+    interestRate: 12,
+    installmentPerMonth: "$5000"
+  },
+  {
+    id: 4,
+    loanMoney: "$50000",
+    leftToRepay: "$40500",
+    durationMonths: 25,
+    interestRate: 5,
+    installmentPerMonth: "$2000"
+  },
+  {
+    id: 5,
+    loanMoney: "$50000",
+    leftToRepay: "$40500",
+    durationMonths: 5,
+    interestRate: 16,
+    installmentPerMonth: "$10000"
+  },
+  {
+    id: 6,
+    loanMoney: "$80000",
+    leftToRepay: "$25500",
+    durationMonths: 14,
+    interestRate: 8,
+    installmentPerMonth: "$2000"
+  },
+  {
+    id: 7,
+    loanMoney: "$12000",
+    leftToRepay: "$5500",
+    durationMonths: 9,
+    interestRate: 13,
+    installmentPerMonth: "$500"
+  },
+  {
+    id: 8,
+    loanMoney: "$160000",
+    leftToRepay: "$100800",
+    durationMonths: 3,
+    interestRate: 12,
+    installmentPerMonth: "$900"
+  },
+
+  {
+    id:"total",
+    loanMoney: "$160000",
+    leftToRepay: "$100800",
+    durationMonths: 12,
+    interestRate: 10,
+    installmentPerMonth: "$50,000 / month"
+  }
+];
