@@ -39,3 +39,22 @@
 .LoanBody td {
     padding:1.5rem;
 }
+
+.SettingForm label input{ 
+    border:1px solid gray;
+    border-radius: 0.2rem;
+    padding-top: 0.4rem;
+    padding: 0.4rem 0.6rem;
+    border-color: rgb(204, 198, 198);
+    outline:none;
+}
+
+.SettingForm label{
+    display: flex;
+    flex-direction: column;
+    gap:0.5rem;
+}
+
+.SettingForm label input::placeholder{
+    color:gray;
+}
