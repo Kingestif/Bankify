@@ -1,6 +1,6 @@
 'use client';
 import { useEffect, useState } from 'react';
-import Cookies from 'js-cookie'; // install with `npm i js-cookie`
+import Cookies from 'js-cookie';
 
 export default function ThemeToggle() {
   const [theme, setTheme] = useState<'light' | 'dark'>('light');
